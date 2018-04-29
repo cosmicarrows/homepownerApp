@@ -15,6 +15,7 @@
 		2663AE21209583AE0090951F /* homepownerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2663AE20209583AE0090951F /* homepownerTests.swift */; };
 		2663AE2C209583AE0090951F /* homepownerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2663AE2B209583AE0090951F /* homepownerUITests.swift */; };
 		26F3868120968C4A001DA737 /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F3868020968C4A001DA737 /* ItemsViewController.swift */; };
+		26F3868320968E20001DA737 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F3868220968E20001DA737 /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		2663AE2B209583AE0090951F /* homepownerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homepownerUITests.swift; sourceTree = "<group>"; };
 		2663AE2D209583AE0090951F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26F3868020968C4A001DA737 /* ItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
+		26F3868220968E20001DA737 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				2663AE08209583A30090951F /* AppDelegate.swift */,
 				26F3868020968C4A001DA737 /* ItemsViewController.swift */,
+				26F3868220968E20001DA737 /* Item.swift */,
 				2663AE0C209583A30090951F /* Main.storyboard */,
 				2663AE12209583AD0090951F /* Assets.xcassets */,
 				2663AE14209583AD0090951F /* LaunchScreen.storyboard */,
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26F3868320968E20001DA737 /* Item.swift in Sources */,
 				2663AE11209583A30090951F /* homepowner.xcdatamodeld in Sources */,
 				26F3868120968C4A001DA737 /* ItemsViewController.swift in Sources */,
 				2663AE09209583A30090951F /* AppDelegate.swift in Sources */,
