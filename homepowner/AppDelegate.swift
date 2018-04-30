@@ -17,6 +17,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        //With the mindframe of dependency injection, we'll Instantiate an ItemStore in our appDelegate and pass it to the ItemsViewController because the ItemsViewController needs it via its itemStore property which is unwrapped
+        let itemStore = ItemStore.init()
+        //for demo purposes, by us calling the init method on ItemStore, it creates 5 ficticious random Item instances and passes it to the allItems Array in the ItemStore for our app
+        
+        
+        let itemsController = window!.rootViewController as! ItemsViewController
+        itemsController.itemStore = itemStore
+        
         return true
     }
 

@@ -11,4 +11,7 @@ import UIKit
 
 class ItemsViewController: UITableViewController {
     
+    //to give the controller access to the ItemStore
+    var itemStore: ItemStore!
+    
 }
