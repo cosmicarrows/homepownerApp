@@ -19,11 +19,33 @@ class ItemsViewController: UITableViewController {
     // MARK: - Implement Required UITableViewDataSource Methods from the UITableViewDataSource Protocol.
     
     //UITableViewController subclasses already come conformed to UITableViewDataSoure and UITableViewDelegate Protocols just in case you were wondering why the protocol conformity isn't shown at the top of the ItemsViewController class.
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
+    }
    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return itemStore.allItems.count
+        switch section {
+        case 0:
+            return itemStore.allItems.count
+        case 1:
+            return 0
+        default:
+            return 0
+        }
         
+    }
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        
+        switch section {
+        case 0:
+            return "List of Item Instances"
+        case 1:
+            return "List of Stolen Item Instances"
+        default:
+            return nil
+        }
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
