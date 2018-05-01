@@ -50,7 +50,9 @@ class ItemsViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // Create an instance of UITableViewCell, with default appearance
-        let cell = UITableViewCell.init(style: .value1, reuseIdentifier: "UITableViewCell")
+        //let cell = UITableViewCell.init(style: .value1, reuseIdentifier: "UITableViewCell")
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "UITableViewCell", for: indexPath)
         
         // Set the text on the cell with the description of the item instance that is at the nth index of the allItems array, where n = row this cell will appear in on the tableview
         let item = itemStore.allItems[indexPath.row]
